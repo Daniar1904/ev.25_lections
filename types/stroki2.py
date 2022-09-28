@@ -133,10 +133,10 @@
 # split(разделитель) - дробит строку на несколько частей по разделителю который находится в строке
 # все части строки сохраняются в тип данных -list-
 
-text = 'Let me speak by my hearth in English! Cause My name is John Snow!'
-ls = text.split(' ')
-print(ls)
-print(len(ls))
+# text = 'Let me speak by my hearth in English! Cause My name is John Snow!'
+# ls = text.split(' ')
+# print(ls)
+# print(len(ls))
 
 # 'Разделитеь=ль'.join(iterable(list)) -> соединяет строки по разделителю строки, которые находятся в list.
 
