@@ -99,3 +99,13 @@ OJBfeafhqe
 # print(lastName)
 # print(last_name)
 
+# string = 'Hello'
+# res = (string[-1] + string[1:-1] + string[0])
+# print(res)
+
+# name = input('name')
+# last_name = input('last_name')
+# age = input('age')
+# city = input('city')
+# result = f'Вас зовут {name} {last_name}, Ваш возраст: {age}, Вы проживаете в городе {city}'
+# print(result)
