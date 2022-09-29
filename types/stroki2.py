@@ -140,8 +140,10 @@
 
 # 'Разделитеь=ль'.join(iterable(list)) -> соединяет строки по разделителю строки, которые находятся в list.
 
-res = '#'.join(ls)
-print(res)
+# res = '#'.join(ls)
+# print(res)
+
+
 
 
 
