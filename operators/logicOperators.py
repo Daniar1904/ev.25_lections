@@ -103,3 +103,41 @@
 # your_age = 18
 # result = not my_age == 21 and not your_age == 19
 # print(result)
+
+# name = input()
+# surname = input()
+# age = input()
+# res = (f'Меня зовут {name} {surname}, Мой возраст: {age}')
+# print(res)
+
+# ---------------------------------------
+
+# user = 'John'
+# is_google_user = True
+# is_github_user = False
+# is_age_greater_21 = False
+# user_coins = 9000
+
+# # либо user google или  github, либо 21, либо бабки(8000)
+# if (is_google_user or is_github_user) and (is_age_greater_21 or user_coins > 8000):
+#     print(f'You can enter the system, Mr/Mrs {user}!')
+# else:
+#     print('Sorry, you couldn\'t enter!')
+
+# Операторы идентификации
+# in -> проверяет наличие элементов какого-либо интерируемого объекта(строки, строки  и т.д.)
+# is -> сравнировает ячейки памяти двух объектов
+    #  == -> сравнивает по значению
+# is not -> отрицательное сравнение ячеек памяти
+
+# str1 = 'Hello world'
+# print(str1)
+# choice = input('Enter the symbol:')
+
+# if choice in str1:
+#     print(f'The symbol: {choice} exist!')
+# else:
+#     print(f'The symbol: {choice} does not exist!')
+
+
+
