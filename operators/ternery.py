@@ -55,7 +55,7 @@
 
 # while flag:
 #     is_correct_number = True
-#     num1 = input('Vvedite pervoye chislo: ')
+#     num1 = input('Введите первое число: ')
 
 #     if len(num1) <= 1 and (num1 == '.' or num1 == '-') or not num1:
 #             print('Вы ввели неправильное число!')
@@ -70,7 +70,7 @@
 #     if not is_correct_number:
 #         continue
 
-#     num2 = input('Vvedite vtoroye chislo: ')
+#     num2 = input('Введите второе число: ')
 #     if len(num2) <= 1 and (num2 == '.' or num2 == '-') or not num2:
 #             print('Вы ввели неправильное число!')
 #             is_correct_number = False
@@ -89,7 +89,7 @@
 #     print(num1)
 #     print(num2)
     
-#     operator = input('Введите оператор: (+, -, *, /) ')
+#     operator = input('Введите оператор (+, -, *, /): ')
     
 #     if operator == '+': 
 #         print(f'Результат: {num1 + num2}')
@@ -110,3 +110,12 @@
 #         flag = False
 #         print('Пока!')
     
+year = int(input())
+
+result = (
+    'YES' if year % 4 == 0 and 
+    year % 100 != 0 or 
+    year % 400 == 0 else 'NO'
+)
+
+print(result)
