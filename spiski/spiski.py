@@ -68,7 +68,7 @@
 
 # ls = ['Hello', 'world', 'my', 'name', 'is', 'John', 'north', 'king', 'queen', 'usa']
 # print(ls)
-# str1 = input('Vvedite slovo: ')
+# str1 = input('Введите слово: ')
 # if str1 in ls:
 #     print(f'{str1} есть в списке и его индекс: {ls.index(str1)}')
 # else:
@@ -115,4 +115,3 @@
 # print(ls)
 # ls[1] = 2
 # print(ls)
-
