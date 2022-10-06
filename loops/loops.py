@@ -102,20 +102,20 @@
 # print(dolins)
 # # 2)
 
-steps = 9
-path = 'UDDUUDDUU'
-dolins = 0
-sea_level = 0
+# steps = 9
+# path = 'UDDUUDDUU'
+# dolins = 0
+# sea_level = 0
 
-for x in path:
-    if x == 'U':
-        sea_level += 1
-        if sea_level == 0:
-            dolins += 1
-    elif x == 'D':
-        sea_level -= 1
+# for x in path:
+#     if x == 'U':
+#         sea_level += 1
+#         if sea_level == 0:
+#             dolins += 1
+#     elif x == 'D':
+#         sea_level -= 1
 
-print(dolins)
+# print(dolins)
 
 
 
