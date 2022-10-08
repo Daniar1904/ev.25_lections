@@ -14,8 +14,8 @@
 
 # print('Начало кода')
 
-# name1 = ''
-# name2 = ''
+# name1 = 
+# name2 = 
 # i = 0
 
 # while name1.lower() != 'john' and name2.lower() != 'jamie':
@@ -116,7 +116,6 @@
 #         sea_level -= 1
 
 # print(dolins)
-
 
 
 
