@@ -123,13 +123,131 @@
 # print(a.keys())
 
 
-a = {'a': 1, 'b': 2, 'c': 1}
-print(a.items())
-for x, z in a.items():
-    print(x, z)
+# a = {'a': 1, 'b': 2, 'c': 1}
+# print(a.items())
+# for x, z in a.items():
+#     print(x, z)
 
+# a = {'x': 1, 'y': 2, 'z': 1}
+# print(a['x'])
 
+# a = {'a': 1, 'b': 4, 'c': 1, 'd': 5, 'e': 6} 
+# b = {}
+# for x in a:
+#     if x % 2 == 0:
+        
+#         print(x)
 
+# tuples = [(), ('ram','15','8'), (), ('laxman', 'sita')]
+# for res in tuples:
+#     if len(res) >= 1:
+#         print(list(res))
+# print(dir(tuples))
 
+# names = []
+# for x in range(0, 5):
+#     name = input('Vvedite FIO: ')
+#     names.append(name)
 
+# result = []
+# for x in names:
+#     x = x.split(' ')
+#     print(x)
+#     result.append(x[-1])
+
+# result.sort()
+# print(result)
+
+# # names = []
+# # name = [
+# #     input(),
+# #     input(),
+# #     input(),
+# #     input(),
+# #     input()
+# # ]
+# # for x in name:
+# #     names.append(name)
+
+# # result = []
+# # for x in names:
+# #     x = x.split(' ')
+# #     result.append(x[-1])
+
+# # result.sort()
+# # print(result)
+
+# list_ = [1, 'abcd', 3, 1.2, 4, 'xyz', 5, 'pqr', 7, -5, -12.22]
+# new_list = []
+# for x in list_:
+#     if type(x) == int:
+#         new_list.append(x)
+#     elif type(x) == float:
+#         new_list.append(x)
+        
+# print(new_list)
+# res = new_list[0] + new_list[1] + new_list[2] + new_list[3] + new_list[4] + new_list[5] + new_list[6] + new_list[7]
+# print(res)
+# print(sum(new_list))
+
+# list_ = [1, 'abcd', 3, 1.2, 4, 'xyz', 5, 'pqr', 7, -5, -12.22]
+# new_list = []
+# for x in list_:
+#     if type(x) == int and x > 0:
+#         new_list.append(x)
+
+# res = new_list[0] + new_list[1] + new_list[2] + new_list[3] + new_list[4]
+# print(res)
+
+# str_list = ['abc', 'xyz', 'aba', '1221']
+# indexs = []
+# for x in str_list:
+#     if x[0] == x[-1]:
+#         indexs.append(str_list.index(x))
+
+# print(indexs)
+# list2 = []
+# step = 3
+# list_ = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n']
+# list2.append(list_[0::3])
+# list2.append(list_[1::3])
+# list2.append(list_[2::3])
+# print(list2)
+
+# list1 = [1,2,3,4,5]
+# list2 = [5,6,7,8,9]
+# for x in list1:
+#     for y in list2:
+#         if x == y:
+#             print(True)
+#         else:
+#             print(False)
+
+# list_ = [4, 6, 4, 3, 3, 8, 4, 3, 4, 3, 8, 8]
+# repeats = 3
+# res = []
+# for x in list_:
+#     if list_.count(x) >= repeats:
+#         res.append(x)
+
+# colors = ["Red", "Green", "Blue", "White", "Black", "Yellow", "Orange"]
+# for ls in colors:
+
+# lists = [[1, 2, 3], [4, 5, 6], [10, 11, 12], [7, 8, 9]]
+# if sum(lists[0]) > sum(lists[1])and sum(lists[2]) and sum(lists[3]):
+#     print(lists[0])
+# elif sum(lists[1]) > sum(lists[0]) and sum(lists[2]) and sum(lists[3]):
+#     print(lists[1])
+# elif sum(lists[3]) > sum(lists[0]) and sum(lists[1]) and sum(lists[2]):
+#     print(lists[3])
+# else:
+#     print(lists[2])
+
+# chars = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+# a = (
+#     input('merge_from = ')
+#     input('merge_to = ')
+# )
+# for res in a:
+    
 

@@ -26,11 +26,18 @@
 # else:
 #     print('NO')
 
-list_ = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-for list1 in list_:
-    if list1 % 2 == 0:
-        print(list1)
-print()
-for list2 in list_:
-    if list2 % 2 != 0:
-        print(list2)
+# list_ = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# for list1 in list_:
+#     if list1 % 2 == 0:
+#         print(list1)
+# print()
+# for list2 in list_:
+#     if list2 % 2 != 0:
+#         print(list2)
+
+list_ = ['sun', 'flowers', 'rumor', 'stranger', 'adventure', 'architect', 'accompany', 'abandon', 'cartoon']
+lisr_ = str(list_)
+letter = input('Enter first letter: ')
+for ls in list_:
+  if letter == ls[0]:
+    print(ls)
