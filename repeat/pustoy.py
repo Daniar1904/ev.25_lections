@@ -35,9 +35,9 @@
 #     if list2 % 2 != 0:
 #         print(list2)
 
-list_ = ['sun', 'flowers', 'rumor', 'stranger', 'adventure', 'architect', 'accompany', 'abandon', 'cartoon']
-lisr_ = str(list_)
-letter = input('Enter first letter: ')
-for ls in list_:
-  if letter == ls[0]:
-    print(ls)
+# list_ = ['sun', 'flowers', 'rumor', 'stranger', 'adventure', 'architect', 'accompany', 'abandon', 'cartoon']
+# lisr_ = str(list_)
+# letter = input('Enter first letter: ')
+# for ls in list_:
+#   if letter == ls[0]:
+#     print(ls)
