@@ -1,46 +1,65 @@
-# names = ['Maya Angelou',  'Chimamanda Ngozi Adichie', 'Tobias Wolff', 'Sherman Alexie', 'Jane Austen' ]
-# names = []
-# for x in range(0, 5):
-#     name = input('Vvedite FIO: ')
-#     names.append(name)
+# db = {
+#     'admin': {'username': 'admin', 'password': 1},
+#     'hello': {'username': 'hello', 'password': 'hello world'}
+# }
 
-# result = []
-# for x in names:
-#     x = x.split(' ')
-#     print(x)
-#     result.append(x[-1])
+# while True:
+#     print('Hello, Выберите действие')
+#     choice = input('1 - register, 2 - login, 3 - show users')
+#     if choice.strip() == '1':
+#         print('Please, register your account')
+#         username = input('Enter the *username: ')
+#         password = input('Enter the *password: ')
+#         password2 = input('Enter the *password confirmation: ')
+#         full_name = input('Enter the your full name: ')
+#         if password != password2:
+#             print('The password must be match!')
+#             continue
+#         elif len(password) < 8:
+#             print('The invalid password! Too short!')
+#             continue
+#         if len(username) < 4:
+#             print('Invalid Username!')
+#             continue
+#         if full_name:
+#             db[username] = {'username': username, 'password': password, 'full_name': full_name}
+#             print('Successfully registered!')
+#         else:
+#             db[username] = {'username': username, 'password': password}
+#             print('Successfully registered!')
 
-# result.sort()
-# print(result)
-
-# ------------------------------
-
-# range(start, stop, [step]) -> возвращает последовательность из целых чисел, 
-# начиная с start до stop, возвращает итерируемый тип данных range
-
-# x = range(1, 10)
-# print(list(x))
-# print(x)
-# for num in x:
-#     print(num)
-
-# res = 0
-# for num in range(1, 101):
-#     res += num
-#     print(res)
-
-# res = []
-
-# for x in range(0, 3):
-#     ls = []
-#     for x in range(0, 3):
-#         ls.append(0)
-#     res.append(ls)
-
-# print(res)
-
-# from itertools import permutations
-# res = list(permutations([1, 2, 3], 3))
-# print(res)
-
-
+#     elif choice.strip() == '2':
+#         print('Please, log-in to your account!')
+#         username = input('Enter your username: ')
+#         password = input('Enter your password: ')
+#         try:
+#             if db[username]['password'] != password:
+#                 print('Invalid password for the account!')
+#                 continue
+#             try:
+#                 name = db[username]['full_name']
+#                 print(f'Welcome to service, Mr/Mrs {name}!')
+#             except KeyError:
+#                 name = db[username]['username']
+#                 print(f'Welcome to service, Mr/Mrs {name}!')
+#         except KeyError:
+#             print(db)
+#             print('The account with this username does not exists!')
+#             continue
+#     elif choice.strip() == '3':
+#         for username in db.keys():
+#             try:
+#                 user = db[username]
+#                 print(f'User: {user["username"]}, Full name: {user["full_name"]}')
+#             except KeyError:
+#                 print(f'User: {user["username"]}')
+#     else:
+#         print('Unsupported operation!')
+#         continue
+    
+#     continue_choice = input('Do you want to continue (yes/no)?: ')
+#     if continue_choice.lower().strip() == 'yes':
+#         continue
+#     else:
+#         print('Bye Bye! Good luck!')
+#         break

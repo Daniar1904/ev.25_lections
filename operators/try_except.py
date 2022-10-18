@@ -142,5 +142,52 @@
 #         flag = False
 #         print('Пока!')
 
+# n = int(input('Enter number 1-100: '))
+# # dict_ = {num: x if x % n == 0 }
+# dict_ = {x in range(1, 501): x ** 2 for x in n}
+# print(dict_)
 
+# dict_ = {'first': 1, 'second': 2, 'third': 3}
+# a = {'even' if x % 2 == 0 else 'odd' for x in dict_.values()}
+# print(a)
 
+# string_ = 'In 1984 there were 13 instances of a protest with over 1000 people attending'
+# list_ = [x for x in string_ if x]
+# print(list_)
+
+# num1 = int(input())
+# num2 = int(input())
+
+# try:
+#     print(num1 + num2)
+# except ValueError:
+#     print('Введите число!')
+
+# try:
+#     num1 = int(input('Enter: '))
+#     num2 = int(input('Enter: '))
+#     result = num1 + num2
+# except ValueError:
+#     print('RURURU')
+# else: print(result)
+
+# try:
+#     age = int(input())
+
+# except ValueError:
+#     print('Доступ запрещён')
+# except:
+#     print('Введён некорректный возраст')
+# else:
+#     print('Спасибо')
+# finally:
+#     print('До свидания!')
+
+# try:
+#     cash = int(input())
+# except ValueError:
+#         print('Сумма не может быть отрицательной!')
+# else:
+#     print(cash)
+
+a = {1, 1, 1, 1, 1}
