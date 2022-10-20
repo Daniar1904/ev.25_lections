@@ -130,9 +130,12 @@
 #         if type(result) == str:
 #             print(f'Error: {result}')
 #         else:
-#             if result % round(result) == 0:
-#                 print(f'Result: {round(result)}')
-#                 break
+#             # if result > 1 and result != 0 and result % round(result) == 0:
+#             #     print(f'Result: {round(result)}')
+#             #     break
+#             # elif result == 0:
+#             #     print(f'Result: {0}')
+#             #     break
 #             print(f'Result: {round(result, 2)}')
 #             break
 
