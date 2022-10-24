@@ -92,3 +92,84 @@
 # for i, x in enumerate(ls):
 #     print(f'Index: {i}, Element: {x}')
 
+# --------------------------------------
+
+# zip(iterables) - она соединяет каждый элемент итерируемых элементов между собой, соединяет в тип данных tuple() и возвращает его.
+
+# ls1 = [1, 2, 3]
+# ls2 = [100, 200, 300]
+# res = list(zip(ls1, ls2))
+# print(res)
+
+# ls1 = [1, 2, 3, 4]
+# ls2 = [100, 200, 300, 400, 500]
+# ls3 = [10, 20, 30]
+# res = list(zip(ls1, ls2, ls3))
+# print(res)
+
+# zip для создания словарей
+
+# x = [(1, 2), (3, 4)]
+# dict_ = dict(x)
+# print(dict_)
+
+# d_keys = ['hostname', 'location', 'vendor', 'model', 'IP']
+# d_values = ['castle_r1', 'winterfell', 'Starks', 'Cisco R1', '10.255.101.10']
+# res = dict(zip(d_keys, d_values))
+# print(res)
+
+# d_keys = ['hostname', 'location', 'vendor', 'model', 'IP']
+# data = {
+#     'r1': ['london_r1', '21 New Globe Walk', 'Cisco', 'DYR-25', '10.255.101.10'],
+#     'r2': ['london_r2', '21 New Globe Greenwich', 'Cisco', 'Pir-24', '98.255.10.11'],
+#     'sw2': ['london_sw2', 'Mercyside', 'Cisco', '3850', '101.255.20.10']
+# }
+
+# london_data = {}
+# for key in data:
+#     london_data[key] = dict(zip(d_keys, data[key]))
+
+# print(london_data)
+
+# ----------------------------------------------------
+
+# all(), any()
+# all(iterable) - возвращает True, если все элементы внутри iterable имеют значение True, иначе возвращает False.
+
+# [1, 2] -> True
+# [] -> False
+# 5 -> True
+# 0 -> False
+# -5 -> True
+# 's' -> True
+# '' -> False
+# ' ' -> True
+
+# ls = [[5, 6], '5', 'stroka', True, 1]
+# print(all(ls))
+
+# ip = '10.255.1y.108'
+# ip1 = '10.255.18.108'
+# ip2 = '118.20.101.108'
+# result = all(i.isdigit() for i in ip.split('.'))
+# result1 = all(i.isdigit() for i in ip1.split('.'))
+# result2 = all(i.isdigit() for i in ip2.split('.'))
+# print(result)
+# print(result1)
+# print(result2)
+
+# any - возвращает True, если хотя бы один из элементов даёт True, иначе False.
+
+# ls = [0, 0, [], (), '']
+# print(any(ls))
+
+ignore = ['rm -rf', 'reset', 'chmod']
+command = input('Введите команду: ')
+if any(word in command for word in ignore):
+    raise Exception('Invalid command!')
+else:
+    print('Всё Окей!')
+
+
+
+
