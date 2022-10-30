@@ -96,3 +96,6 @@
 
 # say('John', '564 Line')
 # hello('Tirion', 'Lanister', 'Casterly Rock')
+
+# list_ = [5, 6, 7, 8]
+

@@ -217,4 +217,93 @@
 # print(x)
 # my_func()
 
+# def longest_words(filename):
+#     with open(filename) as file:
+#         words = file.read().split()
+#     words.sort(key = len, reverse = True)
+#     max_len = len(words[0])
+#     res = []
+#     for i in words:
+#         if len(i) == max_len:
+#             res.append(i)
+#         else:
+#             break
+#     return res if len(res) > 1 else res.pop()
 
+# print(longest_words('test1.txt'))
+
+
+# accounts = [[1,5], [7,3], [3,5]]
+
+# res = [sum(i) for i in accounts]
+# print(max(res))
+
+# word = 'abcdefd'
+# ch = 'd'
+# def func(word, ch):
+#     mid = word.index(ch)
+#     s1 = word[0:mid + 1]
+#     s2 = word[mid + 1:]
+#     return s1[::-1] + s2
+
+# print(func(word, ch))
+
+# def func(list_):
+#     # filtered_list = list(filter(lambda x: x.isdigit(), list_))
+#     # res = list(map(lambda x: int(x), filtered_list)) # 2
+#     # res = list(map(lambda num: int(num), filter(lambda str_: str_.isdigit(), list_))) # 1
+    
+#     res = []
+#     for i in list_:
+#         if i.isdigit(): # 3
+#             res.append(int(i))
+#     return res
+
+# print(func(['123', '12sd', '54', 'das', '142']))
+
+# list_ = ['123', '12sd', '54', 'das', '142']
+
+# a = {'a': 1, 'b': 34, 'c': None, 'd': 5, 'e': None}
+# for i in a.copy():
+#     if a[i] == None:
+#         a.pop(i)
+# print(a)
+
+
+# radius = 5
+# pi = 3.14
+# s = 2 * pi * radius
+# p = pi * radius ** 2
+# print(s)
+# print(p)
+
+# dict_ = {'x': 1, 'y': 2, 'z': 1}
+# res = dict_.get('x')
+# print(res)
+# for x in res.values()
+# print(dir(dict))
+
+# n = int(input('ВВедите число от 1 до 10: '))
+# dict_ = {x: x ** 2 for x in range(1, 501) if x % n == 0}
+# print(dict_)
+
+# string_ = 'In 1984 there were 13 instances of a protest with over 1000 people attending'
+# list_ = [x for x in string_.split(' ') if x.isdigit()]
+# print(list_)
+
+# list_ = [x for x in range(1, 25) if x % 2 == 0]
+# print(list_)
+
+
+
+
+# list_ = [-4, -3, -2, -1, 0, 1, 2, 3, 4]
+# int_list = [x for x in list_ if x < 0]
+# int_list = []
+# for x in list_:
+#     if x < 0:
+#         x = 1
+#         int_list.append(x)
+#     else:
+#         int_list.append(x)
+# print(int_list)
