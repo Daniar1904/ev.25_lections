@@ -307,3 +307,24 @@
 #     else:
 #         int_list.append(x)
 # print(int_list)
+
+# -----------------------------------------
+a = range(10000, 100000)
+res1 = list(filter(lambda x: x % 2 == 0, a))
+res2 = []
+for x in res1:
+    if type(x) != str:
+        x = str(x)
+        res2.append(x)
+        
+c = []
+for i in res2:
+    if int(i[len(i) // 2]) % 2 != 0:
+        # i = int(i)
+        c.append(i)
+
+# result = []
+# for x in c:
+#     x = int(x)
+#     x = list(str(x))  
+print(c)

@@ -91,5 +91,3 @@
 #     data.remove(product)
 #     save_data(data)
 #     return 'Товар удален!'
-
-

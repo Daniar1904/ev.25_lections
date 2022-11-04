@@ -31,3 +31,7 @@
 #     elif number % 5 == 0:
 #         print(f'{number} ba')
     
+# a = 1234
+# print(dir(int))
+
+
