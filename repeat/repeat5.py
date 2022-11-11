@@ -39,7 +39,7 @@
 #         seconds = datetime.now().second
 #         microseconds = datetime.now().microsecond
 #         writer.writerow([x, hours, minutes, seconds, microseconds])
-#         sleep(0.1)
+#         sleep(0.01)
 
 
 # 1. У нас есть файл file.txt c текстом на латинице. Нужно написать программу, которая будет выводить статистику по тексту:

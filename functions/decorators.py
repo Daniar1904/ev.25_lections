@@ -14,18 +14,17 @@
 # decorator(hello)
 
 
-# Pythonic way -> красота и простота кода
-# Синтаксический сахар -> красота кода
+# Pythonic way -> красота и простота код# Синтаксический сахар -> красота кода
 # @ -> декоратор
 
-# def benchmark(func):
-#     def wrapper():
-#         import time
-#         start = time.time()
-#         func()
-#         finish = time.time()
-#         print(f'Время выполнения функции {func.__name__} заняло {finish - start}')
-#     return wrapper
+ def benchmark(func):
+     def wrapper():
+         import time
+         start = time.time()
+         func()
+         finish = time.time()
+         print(f'Время выполнения функции {func.__name__} заняло {finish - start}')
+     return wrapper
 
 # @benchmark
 # def loop():
