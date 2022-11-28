@@ -215,4 +215,16 @@
 # print(func(date_)) # No
 # print(func(date_2)) # Yes
 
+class Taxi:
+    def __init__(self, name, cost, cost_km) -> None:
+        self.name = name
+        self.cost = cost
+        self.cost_km = cost_km
+    
+    def get_total_cost(self, km):
+        self.km = km
+        return self.cost * self.km
+
+namba
+        
 
