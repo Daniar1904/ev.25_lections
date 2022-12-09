@@ -76,3 +76,69 @@
 
 # AS (ALIAS)
 # SELECT name, price * quantity AS total FROM produucts;
+
+
+# GROUP By
+# Разделяет данные, которые мы получаем в SELECT'е, при этом группируя их по определенному признаку. И теперь для каждой группы можно использовать функции.
+# SELECT city, MAX(temp_high), AVG(prcep), SUM(temp_low) as summa_temp, MIN(date) FROM weather GROUP BY city;
+
+# HAVING: он работает также как и WHERE, только с оператором GROUP BY.
+
+
+# Команда для создания таблицы 
+# CREATE TABLE <tablename> (
+#         <name_column> <type>,
+#         <name_column> <type>,
+#         <name_column> <type>
+# );
+        # CREATE TABLE weather (city varchar(80),
+        #                         date date,
+        #                         temp int);
+
+# DROP TABLE <name>; удаление
+
+# Команда для добавления данных в таблицу
+# INSERT INTO <tablename> [(columns)] VALUES (data)
+
+# INSERT INTO cities (name, location) 
+# VALUES ('Bishkek', '(42, 74)');
+
+# Команда обновления
+# UPDATE <tablename> SET <row> = <new_value>
+# WHERE <row> = <value>
+
+# Команда для удаления
+# DELETE FROM <tablename> WHERE <row> = <value>
+
+
+ # 5.Location - координатная точка -> (245, -12) -> (x, y)
+
+# ========================================================
+# Связи между таблицами(relations):
+#     1. Один к одному(One-to-one) - Человек и паспорт
+#     2. Один ко многим(One-to-many) - Человек и банковские карты
+#     3. Много ко многому(Many to many) - Студенты и преподаватели 
+
+# Ограничения(Constraints):
+#     1. NOT NULL
+#     2. UNIQUE
+#     3. CHECK -> CHECK NUMBER > 5
+#     4. PRIMARY KEY(для установки идентификатора данных в таблице)
+#     5. FOREIGN KEY(ддля установки связи между таблицами)
+#     6. ON DELETE(для установки поведения при удалении данных, которые были связаны)
+#     -> SET NULL, CASCADE, RESTRICT, SET DEFAULT(value)
+
+# SELECT p1.title, p1.price, o1.quantity, p1.price * o1.quantity as total_sum FROM products p1, orders o1 WHERE p1.id = 
+# o1.product_id; - ЗАпрос сразу в две таблицы
+
+
+# JOIN - соединение таблиц
+# SELECT * FROM products JOIN orders ON products.id = orders.product_id; 
+
+# JOIN: Выборка данных из двух таблиц, соединение таблиц
+
+# LEFT JOIN: Выборка будет содержать все строки из левой таблицы
+
+# RIGHT JOIN: Выборка будет содержать все строки из правой таблицы
+
+# INNER JOIN: выводит все данные согласно условию
